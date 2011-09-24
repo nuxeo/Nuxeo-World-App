@@ -147,10 +147,10 @@ function parseISO8601(str) {
     _date.setSeconds(Number(timeSecParts[0]));
     if (timeSecParts[1]) {
         _date.setMilliseconds(Number(timeSecParts[1]));
-    };
+    }
 
     return _date;
-};
+}
 
 function strpos(haystack, needle, offset) {
     var i = (haystack + '').indexOf(needle, (offset || 0));

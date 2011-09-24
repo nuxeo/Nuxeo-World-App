@@ -26,7 +26,7 @@
         });
         var data = [
         	{
-	            title: 'Codestrong',
+	            title: 'Nuxeo World',
 	            view: Ti.UI.createWebView({
 	                url: 'pages/about.html'
 	            })

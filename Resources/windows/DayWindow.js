@@ -32,32 +32,22 @@
         // params object
         var createDayRow = function (params) {
             return Codestrong.extend(Ti.UI.createTableViewRow(params), baseRow);
-        }
+        };
 
         // Create data for TableView
         var data = [
 	        createDayRow({
-	            title: 'Sunday, September 18th',
-	            titleShort: 'September 18th',
-	            scheduleListing: false,
-	            url: 'pages/2011-09-18.html'
-	        }), createDayRow({
-	            title: 'Monday, September 19th',
-	            titleShort: 'September 19th',
-	            start_date: '2011-09-19 00:00:00',
-	            end_date: '2011-09-20 00:00:00',
+	            title: 'Thursday, October 20th',
+	            titleShort: 'October 20th',
+	            start_date: '2011-10-20 00:00:00',
+	            end_date: '2011-10-21 00:00:00',
 	            scheduleListing: true
 	        }), createDayRow({
-	            title: 'Tuesday, September 20th',
-	            titleShort: 'September 20th',
-	            start_date: '2011-09-20 00:00:00',
-	            end_date: '2011-09-21 00:00:00',
+	            title: 'Friday, October 21th',
+	            titleShort: 'October 21th',
+	            start_date: '2011-10-21 00:00:00',
+	            end_date: '2011-10-22 00:00:00',
 	            scheduleListing: true
-	        }), createDayRow({
-	            title: 'Hackathon',
-	            titleShort: 'Hackathon',
-	            scheduleListing: false,
-	            url: 'pages/hackathon.html'
 	        })
         ];
 

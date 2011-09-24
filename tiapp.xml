@@ -7,13 +7,13 @@
         <target device="blackberry">false</target>
         <target device="android">true</target>
     </deployment-targets>
-    <id>com.appcelerator.codestrong</id>
-    <name>Codestrong</name>
-    <version>1.0</version>
-    <publisher>Appcelerator, Inc.</publisher>
-    <url>http://appcelerator.com</url>
-    <description>CODESTRONG Mobile Companion</description>
-    <copyright>2011 Appcelerator, Inc</copyright>
+    <id>com.nuxeo.nuxeoworld</id>
+    <name>NuxeoWorld</name>
+    <version>0.1</version>
+    <publisher>Nuxeo SA</publisher>
+    <url>http://nuxeo.com</url>
+    <description>Nuxeo World Mobile Companion</description>
+    <copyright>2011 Nuxeo SA</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>

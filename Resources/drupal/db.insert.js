@@ -193,10 +193,7 @@ Drupal.db.InsertQuery.prototype.preExecute = function () {
     // If no values have been added, silently ignore this query. This can happen
     // if values are added conditionally, so we don't want to throw an
     // exception.
-    if (!this.insertValues[0] && this.insertFields.length > 0 && !this.fromQuery) {
-        return false;
-    }
-    return true;
+    return this.insertValues[0] || this.insertFields.length <= 0 || this.fromQuery;
 };
 
 /**

@@ -36,20 +36,20 @@
             });
         };
         var data = [{
-        	title: '#codestrong',
-        	view: createTwitterTable('#codestrong'),
-            url: 'http://search.twitter.com/search.json?q=%23codestrong&result_type=recent&rpp=' + tweetCount,
+        	title: '#nuxeoworld',
+        	view: createTwitterTable('#nuxeoworld'),
+            url: 'http://search.twitter.com/search.json?q=%23nuxeoworld&result_type=recent&rpp=' + tweetCount,
             isSearch: true
         }, {
-            title: '@appcelerator',
-            view: createTwitterTable('@appcelerator'),
-            url: 'http://api.twitter.com/1/statuses/user_timeline.json?screen_name=appcelerator&count=' + tweetCount,
+            title: '@nuxeo',
+            view: createTwitterTable('@nuxeo'),
+            url: 'http://api.twitter.com/1/statuses/user_timeline.json?screen_name=nuxeo&count=' + tweetCount,
             isSearch: false
         }, {
-            title: '@codestrong',
-            view: createTwitterTable('@codestrong'),
-            url: 'http://api.twitter.com/1/statuses/user_timeline.json?screen_name=codestrong&count=' + tweetCount,
-            isSearch: false
+        	title: '#nuxeo',
+        	view: createTwitterTable('#nuxeo'),
+            url: 'http://search.twitter.com/search.json?q=%23nuxeo&result_type=recent&rpp=' + tweetCount,
+            isSearch: true
         }
 
         ];

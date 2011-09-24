@@ -128,7 +128,8 @@
                     text: Codestrong.cleanSpecialChars(sessions[i].title),
                     font: {
                         fontSize: 14,
-                        fontWeight: 'normal'
+                        fontWeight: 'normal',
+                        fontWeight: 'bold'
                     },
                     left: 10,
                     top: 10,
@@ -136,9 +137,6 @@
                     bottom: 10,
                     height: 'auto',
                     color: '#fff',
-                    font: {
-                        fontWeight: 'bold'
-                    },
                     touchEnabled: false
                 });
                 sessionRow.add(titleLabel);

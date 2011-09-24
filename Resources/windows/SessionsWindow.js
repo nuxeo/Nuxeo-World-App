@@ -37,10 +37,19 @@
 
         var data = [];
         var conn = Drupal.db.getConnection('main');
+        var r1 = conn.query("SELECT * FROM node");
+        while (r1.isValidRow()) {
+            Ti.API.debug("Selected row with nid" + r1.fieldByName('nid') + " " + r1.fieldByName("start_date"));
+            r1.next();
+        }
+        r1.close();
+
+        Ti.API.debug("Start date: " + settings.start_date + " End date: " + settings.end_date);
         var rows = conn.query("SELECT nid FROM node WHERE start_date >= ? AND end_date <= ? ORDER BY start_date, nid", [settings.start_date, settings.end_date]);
         var nids = [];
 
         while (rows.isValidRow()) {
+            Ti.API.debug("Selected row with nid" + rows.fieldByName('nid'));
             nids.push(rows.fieldByName('nid'));
             rows.next();
         }

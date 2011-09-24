@@ -72,7 +72,7 @@ Codestrong.ui.activityIndicator = (function() {
 				activityIndicator.close({animated:false});	
 			}	
 		}
-	}
+	};
 	
 	return activityIndicator;
 })();

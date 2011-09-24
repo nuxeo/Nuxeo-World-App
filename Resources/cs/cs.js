@@ -33,7 +33,7 @@ var Codestrong = {
 			Codestrong.__isAndroid = (Ti.Platform.osname == 'android');
 		}
 		return Codestrong.__isAndroid;
-	}
+	};
 	
 	Codestrong.cleanSpecialChars = function(str) {
   		if (str == null) {
