@@ -93,6 +93,7 @@ Drupal.entity.sites.main.types.node.schema = {
      */
     defaultFetcher: function (bundle, store, func) {
         var url = 'http://codestrong.com/mobile/sessions/' + bundle;
+        Ti.API.debug("Fetching " + url);
         this.prototype.defaultFetcher.apply(this, [bundle, store, func, url]);
     }
 };

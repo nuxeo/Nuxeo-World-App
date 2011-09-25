@@ -24,11 +24,11 @@ var Drupal, Ti;
  * and saving cached entities.  Although it uses SQLite
  * under the hood, it's not truly accessible as an SQL engine.
  *
- * @param string site
+ * @param {string} site
  *   The site key to wich this datastore is bound.
  * @param Ti.Database.DB connection
  *   The database connection object for this datastore.
- * @param string
+ * @param {string} entityType
  *   The type of entity this datastore should access.
  * @return Drupal.entity.Datastore
  */
@@ -64,7 +64,7 @@ Drupal.entity.Datastore.prototype.getIdField = function () {
  * automatically and the query will fail if one is not
  * defined.
  *
- * @param Object entity
+ * @param {Object} entity
  *   A Drupal entity to save.  This should be an untyped
  *   object.  It is (or should be) safe to simply use an 
  *   entity object retrieved from a Drupal site.
@@ -81,7 +81,7 @@ Drupal.entity.Datastore.prototype.save = function (entity) {
 /**
  * Inserts a new entity into the local database.
  *
- * @param Object entity
+ * @param {Object} entity
  *   A Drupal entity to insert.  This should be an untyped
  *   object.  It is (or should be) safe to simply use an 
  *   entity object retrieved from a Drupal site.
