@@ -19,7 +19,7 @@
     Codestrong.ui.createMapWindow = function () {
         var mapWindow = Titanium.UI.createWindow({
             id: 'mapWindow',
-            title: 'Meeting Room Maps',
+            title: 'Venue Maps',
             backgroundColor: '#FFF',
             barColor: '#414444',
             height: '100%',
@@ -30,9 +30,9 @@
         var duration = 250;
         var data = [
         	{
-	            title: 'Floor 3 - Grand Ballroom',
-	            shortTitle: '3rd Floor',
-	            url: 'pages/maps/map3.html',
+	            title: 'Ground Floor',
+	            shortTitle: 'Grd Floor',
+	            url: 'pages/maps/map_rdc.html',
 	            animateOut: {
 	                left: -1 * Ti.Platform.displayCaps.platformWidth,
 	                top: Codestrong.ui.tabBarHeight,
@@ -46,9 +46,9 @@
 	            left: 0
         	}, 
         	{
-	            title: 'Floor 4 - Pacific Terrace',
-	            shortTitle: '4th Floor',
-	            url: 'pages/maps/map4.html',
+	            title: 'Second Floor',
+	            shortTitle: '2nd Floor',
+	            url: 'pages/maps/map_2nd.html',
 	            animateOut: {
 	                left: Ti.Platform.displayCaps.platformWidth,
 	                top: Codestrong.ui.tabBarHeight,
