@@ -26,8 +26,8 @@
     });
     var viewFade = Ti.UI.createView({
         backgroundColor: '#fff',
-        borderColor: '#888',
-        borderWidth: 4,
+        borderColor: '#fff',
+        borderWidth: 1,
         height: Codestrong.ui.dashboardHeight,
         width: Codestrong.ui.dashboardWidth,
         bottom: 20,

@@ -48,6 +48,8 @@ launch-titanium:
 	@mkdir -p ${PROJECT_ROOT}/build/iphone/
 	@PROJECT_NAME=${PROJECT_NAME} PROJECT_ROOT=${PROJECT_ROOT} DEVICE_TYPE=${DEVICE_TYPE} bash ${PROJECT_ROOT}/bin/titanium.sh
 
+#
+# Specific part written by Nuxeo
 
 SDK_VERSION=1.7.2
 IOS_VERSION=4.3
@@ -59,9 +61,17 @@ APP_NAME=Nuxeo World
 DIST_CERT=Nuxeo
 SDK_HOME=/Library/Application Support/Titanium/mobilesdk/osx/$(SDK_VERSION)/
 IOS_BUILDER=$(SDK_HOME)/iphone/builder.py
+ANDROID_BUILDER=$(SDK_HOME)/android/builder.py
+ANDROID_HOME=$(HOME)/apps/android-sdk-mac_x86
+
 HERE=$(shell pwd)
 
 install-ios:
 	@cp ./Resources/iphone/Default.png build/iphone/Resources/Default.png
 	python "$(IOS_BUILDER)" install "$(IOS_VERSION)" $(HERE) \
 		    "$(APP_ID)" "$(APP_NAME)" $(TEST_UUID) "$(DEV_ID)" iphone
+
+test-android:
+	@cp ./Resources/iphone/Default.png build/iphone/Resources/Default.png
+	python "$(ANDROID_BUILDER)" simulator "$(APP_NAME)" "$(ANDROID_HOME)" \
+		    "$(HERE)" "$(APP_ID)" 8 HVGA

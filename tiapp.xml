@@ -11,7 +11,7 @@
     <name>NuxeoWorld</name>
     <version>0.1</version>
     <publisher>Nuxeo SA</publisher>
-    <url>http://nuxeo.com</url>
+    <url>http://www.nuxeo.com/</url>
     <description>Nuxeo World Mobile Companion</description>
     <copyright>2011 Nuxeo SA</copyright>
     <icon>appicon.png</icon>
@@ -22,7 +22,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>755a100d-f77d-48fc-ad53-80c6e1bad9dd</guid>
+    <guid>0cee858c-d16d-4054-b587-bf8ef118ad4d</guid>
     <iphone>
         <orientations device="iphone">
             <orientation>Ti.UI.PORTRAIT</orientation>

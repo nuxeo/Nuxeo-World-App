@@ -1,8 +1,8 @@
-#appname:Codestrong
-#publisher:Appcelerator, Inc.
-#url:http://appcelerator.com
+#appname:Nuxeo World
+#publisher:Nuxeo SA
+#url:http://www.nuxeo.com/
 #image:appicon.png
-#appid:com.appcelerator.codestrong
-#desc:CODESTRONG Mobile Companion
+#appid:com.nuxeo.nuxeoworld
+#desc:Nuxeo World Mobile Companion
 #type:ipad
-#guid:755a100d-f77d-48fc-ad53-80c6e1bad9dd
+#guid:0cee858c-d16d-4054-b587-bf8ef118ad4d

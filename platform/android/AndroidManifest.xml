@@ -1,9 +1,9 @@
-<?xml version="1.0" ?><manifest android:versionCode="1" android:versionName="1" package="com.appcelerator.codestrong" xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" ?><manifest android:versionCode="1" android:versionName="1" package="org.nuxeo.nuxeoworld" xmlns:android="http://schemas.android.com/apk/res/android">
 	<supports-screens android:anyDensity="false"/><uses-sdk android:minSdkVersion="7"/>
 
 	<!-- TI_MANIFEST -->
 
-	<application android:debuggable="false" android:icon="@drawable/appicon" android:label="Codestrong" android:name="CodestrongApplication">
+	<application android:debuggable="false" android:icon="@drawable/appicon" android:label="Nuxeo World" android:name="NuxeoWorldApplication">
 
 		<!-- TI_APPLICATION -->
 
@@ -13,8 +13,6 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-
-		
 
 		<activity android:configChanges="keyboardHidden|orientation" android:name="org.appcelerator.titanium.TiActivity"/>
 		<activity android:configChanges="keyboardHidden|orientation" android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.Translucent"/>
