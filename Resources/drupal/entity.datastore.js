@@ -94,8 +94,8 @@ Drupal.entity.Datastore.prototype.insert = function (entity) {
         var timeslot = entity['time'];
         var m = /^(\d+)\s+([^\s]+)\s+(\d\d\:\d\d)\s*\-\s*(\d\d\:\d\d)/.exec(timeslot);
         if (m && m.length) {
-            entity['start_date'] = '2011-09-' + m[1] + ' ' + m[3] + ':00.000';
-            entity['end_date'] = '2011-09-' + m[1] + ' ' + m[4] + ':00.000';
+            entity['start_date'] = '2011-10-' + m[1] + ' ' + m[3] + ':00.000';
+            entity['end_date'] = '2011-10-' + m[1] + ' ' + m[4] + ':00.000';
         } else {
             entity['start_date'] = '';
             entity['end_date'] = '';

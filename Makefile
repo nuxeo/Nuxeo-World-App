@@ -87,3 +87,11 @@ install-android:
 	python "$(ANDROID_BUILDER)" install "$(APP_NAME)" "$(ANDROID_HOME)" \
 		    "$(HERE)" "$(APP_ID)" 8
 
+prepare-data:
+	# NOTE: -I option shouldn't be needed if CPAN configured properly
+	python gen_json.py
+	perl -I /Users/fermigier/.cpan/build/JSON-2.53-uATlTb/lib populate.pl
+	rm Resources/main.sql
+	sqlite3 Resources/main.sql < main.sql.script 
+	rsync -e ssh -avz data/* root@nuxeo.org:/var/www/community.nuxeo.com/static/nuxeo-world/2011
+

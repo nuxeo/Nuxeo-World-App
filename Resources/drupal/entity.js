@@ -148,6 +148,8 @@ Drupal.entity.DefaultSchema.prototype.getFieldValues = function (entity, values)
 Drupal.entity.DefaultSchema.prototype.defaultFetcher = function (bundle, store, func, fetchUrl) {
     var xhr = Titanium.Network.createHTTPClient();
     xhr.onload = function () {
+        Ti.API.debug("Received: " + this.responseText);
+
         var entities = JSON.parse(this.responseText).entities;
         var length = entities.length;
 

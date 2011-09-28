@@ -9,7 +9,7 @@
     </deployment-targets>
     <id>com.nuxeo.nuxeoworld</id>
     <name>NuxeoWorld</name>
-    <version>0.1</version>
+    <version>1.0</version>
     <publisher>Nuxeo SA</publisher>
     <url>http://www.nuxeo.com/</url>
     <description>Nuxeo World Mobile Companion</description>

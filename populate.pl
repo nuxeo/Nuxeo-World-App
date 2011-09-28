@@ -28,7 +28,8 @@ $sql .= "CREATE TABLE user(uid INTEGER DEFAULT NULL, full_name VARCHAR DEFAULT N
 $sql .= "CREATE TABLE node(nid INTEGER DEFAULT NULL, title VARCHAR DEFAULT NULL, instructors VARCHAR DEFAULT NULL, body VARCHAR DEFAULT NULL, room VARCHAR DEFAULT NULL, start_date VARCHAR DEFAULT NULL, end_date VARCHAR DEFAULT NULL, data BLOB DEFAULT NULL);\n\n";
 
 # Process JSON for speakers
-my $json = decode_json(getJsonFromUrl('http://codestrong.com/mobile/speakers'));
+my $json = decode_json(getJsonFromUrl(
+        'file:////Users/fermigier/projects/NuxeoWorldApp/data/speakers.json'));
 foreach my $entity (@{$json->{entities}}) {
 	$sql .= "INSERT INTO user(uid, full_name, name, company, picture, bio, data) VALUES (";
 	$sql .= $entity->{entity}->{uid} . ", ";
@@ -42,7 +43,8 @@ foreach my $entity (@{$json->{entities}}) {
 $sql .= "\n";
 
 # Process JSON for sessions
-my $json = decode_json(getJsonFromUrl('http://codestrong.com/mobile/sessions'));
+my $json = decode_json(getJsonFromUrl(
+        'file:////Users/fermigier/projects/NuxeoWorldApp/data/sessions.json'));
 #my $ctr = 0;
 foreach my $entity (@{$json->{entities}}) {
 	$sql .= "INSERT INTO node(nid, title, instructors, body, room, start_date, end_date, data) VALUES (";
@@ -55,7 +57,7 @@ foreach my $entity (@{$json->{entities}}) {
 	my ($startDate, $endDate);
 	if ($entity->{entity}->{time} =~ /^(\d+)\s+([^\s]+)\s+(\d\d\:\d\d)\s*\-\s*(\d\d\:\d\d)/) {
 		my $day = $1;
-		my $month = '09'; # $2, but its always September
+		my $month = '10'; # $2, but its always September
 		my $startTime = $3;
 		my $endTime = $4;
 		

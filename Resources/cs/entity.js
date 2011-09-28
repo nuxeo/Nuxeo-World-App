@@ -92,7 +92,8 @@ Drupal.entity.sites.main.types.node.schema = {
      *   A callback function to call after the fetching process has been completed.
      */
     defaultFetcher: function (bundle, store, func) {
-        var url = 'http://codestrong.com/mobile/sessions/' + bundle;
+        var url = 'http://community.nuxeo.com/static/nuxeo-world/2011/sessions.json';
+        Ti.API.debug("Bundle: " + bundle);
         Ti.API.debug("Fetching " + url);
         this.prototype.defaultFetcher.apply(this, [bundle, store, func, url]);
     }
@@ -125,7 +126,8 @@ Drupal.entity.sites.main.types.user.schema = {
      *   A callback functino that will be called when the fetch is complete.
      */
     defaultFetcher: function (bundle, store, func) {
-        this.prototype.defaultFetcher.apply(this, [bundle, store, func, 'http://codestrong.com/mobile/speakers']);
+        this.prototype.defaultFetcher.apply(this,
+          [bundle, store, func, 'http://community.nuxeo.com/static/nuxeo-world/2011/speakers.json']);
     }
 
 };
